@@ -1,0 +1,33 @@
+{
+  "name": "osa4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node index.js",
+    "watch": "cross-env NODE_ENV=development nodemon index.js",
+    "test": "cross-env NODE_ENV=test jest --verbose",
+    "lint": "eslint ."
+  },
+  "author": "Mikko Lehtonen",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "cross-env": "^5.2.0",
+    "eslint": "^5.10.0",
+    "jest": "^23.6.0",
+    "nodemon": "^1.18.8",
+    "supertest": "^3.3.0"
+  },
+  "dependencies": {
+    "bcrypt": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.4.0",
+    "mongoose": "^5.3.16"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
